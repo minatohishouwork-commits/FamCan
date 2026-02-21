@@ -26,8 +26,8 @@ h3 {
   position: relative;
   display: inline-block;
   padding: 0 55px;
-  font-size: 32px;
-  letter-spacing: 1.8px;
+  font-size: 20px;
+  letter-spacing: 1.2px;
 }
 h3::before,
 h3::after {
@@ -50,7 +50,7 @@ h3::after {
 h4 {
   margin: 0;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 16px;
 }
 ul {
   margin: 0;
@@ -73,8 +73,7 @@ p {
   margin: 0 auto;
   display: block;
   padding:16px;
-  width: 100%;
-  font-size: 20px;
+  font-size:14px;
   font-weight: bold;
   border: 0;
   background: rgb(214, 251, 203);
@@ -93,7 +92,6 @@ p {
 header {
   position: sticky;
   top: 0;
-  background: white;
   z-index: 2;
 }
 
@@ -127,15 +125,14 @@ header img {
 }
 .hero h2 {
   color: white;
-  font-size: 40px;
-  letter-spacing: 2px;
+  font-size: 32px;
   text-shadow: 2px 8px 8px gray;
   padding-top: 36px;
 }
 .hero p {
   color: white;
   line-height: 1.8;
-  font-size: 20px;
+  font-size: 16px;
   margin: 40px 0;
 }
 a{
@@ -172,7 +169,7 @@ a{
   object-fit: cover;
 }
 .popular-item .card p {
-  font-size: 20px;
+  font-size: 14px;
 }
 .card{
   position: relative;
@@ -183,11 +180,11 @@ a{
   left: 8px;
   background: red;
   color: white;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   padding: 4px 8px;
   border-radius: 4px;
-  z-index: 3;
+  z-index: 1;
 }
 
 .card-link img:hover{
@@ -233,15 +230,16 @@ a{
 
 .feature .item .text{
   position: absolute;
-  top:70%;
+  top:50%;
   left:50%;
   transform: translate(-50%, -50%);
   z-index: 1;
   color:white;
-  font-size: 34px;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
-  letter-spacing: 1.8px;
+  letter-spacing: 1.7px;
+  width: 100%;
 }
 
 .feature .feature-list .item + .item{
@@ -272,19 +270,22 @@ footer  small{
 }
 
 footer nav{
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 footer address{
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 footer address ul{
   display: flex;
   gap: 24px;
-  font-size: 32px;
+  font-size: 24px;
 }
 
+footer h1 img{
+  vertical-align: bottom;
+}
 footer address li .fa-brands{
   color: gray;
 }
@@ -295,7 +296,7 @@ footer .fa-brands:hover{
 }
 
 footer nav li{
-  font-size: 24px;
+  font-size: 16px;
 }
 /* =========================
    PC以上
