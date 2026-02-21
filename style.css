@@ -116,7 +116,7 @@ header img {
    hero
 ========================= */
 .hero {
-  background: url(/outdoor/img/mv.jpg) center center / cover no-repeat scroll;
+  background: url(img/mv.jpg) center center / cover no-repeat scroll;
   text-align: center;
   padding: 36px 16px;
 }
