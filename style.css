@@ -1,0 +1,326 @@
+@charset "UTF-8";
+/* =========================
+   common
+========================= */
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Yu Gothic", "YuGothic", "Hiragino Sans", "Meiryo", sans-serif;
+  font-weight: 400;
+  min-width: 360px;
+}
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+h3 {
+  margin: 48px auto 0;
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+  font-size: 32px;
+  letter-spacing: 1.8px;
+}
+h3::before,
+h3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 48px;
+  height: 2px;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+h3::before {
+  left: 0;
+}
+h3::after {
+  right: 0;
+}
+
+h4 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 28px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  line-height: 1.8;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  width: calc(100% - 64px);
+  min-width: 360px;
+}
+.heading-center {
+  text-align: center;
+}
+.more-btn{
+  margin: 0 auto;
+  display: block;
+  padding:16px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  border: 0;
+  background: rgb(214, 251, 203);
+  margin-top: 32px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.more-btn:hover{
+  background: rgb(183, 244, 164);
+  transition: 0.4s;
+}
+/* =========================
+   header
+========================= */
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 2;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  /* padding: 0 18px; */
+}
+
+header ul {
+  display: flex;
+}
+header nav,
+header address,
+header form {
+  display: none;
+}
+header img {
+  display: block;
+}
+
+/* =========================
+   hero
+========================= */
+.hero {
+  background: url(/outdoor/img/mv.jpg) center center / cover no-repeat scroll;
+  text-align: center;
+  padding: 36px 16px;
+}
+.hero h2 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-shadow: 2px 8px 8px gray;
+  padding-top: 36px;
+}
+.hero p {
+  color: white;
+  line-height: 1.8;
+  font-size: 20px;
+  margin: 40px 0;
+}
+a{
+  text-decoration: none;
+  color: initial;
+}
+
+
+/* =========================
+   popular-item
+========================= */
+.popular-item {
+  margin: 48px 0 0;
+}
+
+.popular-item .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  background: white;
+  margin-top: 32px;
+  grid-auto-columns: 1fr;
+}
+
+.popular-item .card {
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+.popular-item .card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.popular-item .card p {
+  font-size: 20px;
+}
+.card{
+  position: relative;
+}
+.badge{
+  position: absolute;
+  top:8px;
+  left: 8px;
+  background: red;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  z-index: 3;
+}
+
+.card-link img:hover{
+  opacity: 0.7;
+  transition: opacity 0.4s;
+}
+/* =========================
+    feature
+ ========================= */
+.feature {
+  margin: 48px 0;
+}
+.feature-list {
+  margin-top: 32px;
+}
+
+.feature .item .feature-img{
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-list .item img {
+  width: 100%;
+  aspect-ratio: 67 / 32;
+  object-fit: cover; /* はみ出した部分をトリミング */
+  vertical-align: bottom;
+}
+
+.feature .item .feature-img::after{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+  rgba(0,0,0,0)0%,
+  rgba(0,0,0,0.6) 100%
+  );
+  z-index: 0;
+}
+
+.feature .item .text{
+  position: absolute;
+  top:70%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color:white;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1.8px;
+}
+
+.feature .feature-list .item + .item{
+  margin-top: 24px;
+}
+.feature-link{
+  display: block;
+}
+.feature-link:hover .feature-img{
+ opacity: 0.8;
+}
+.feature-img{
+  transition: opacity 0.3s;
+}
+/* =========================
+   footer
+========================= */
+
+footer{
+  background: #F1F1F1;
+  padding: 48px;
+}
+
+footer  small{
+  margin-top: 28px;
+  display: block;
+  text-align: center;
+}
+
+footer nav{
+  margin-top: 32px;
+}
+
+footer address{
+  margin-top: 32px;
+}
+
+footer address ul{
+  display: flex;
+  gap: 24px;
+  font-size: 32px;
+}
+
+footer address li .fa-brands{
+  color: gray;
+}
+
+footer .fa-brands:hover{
+  color: black;
+  transition: opacity 0.4s;
+}
+
+footer nav li{
+  font-size: 24px;
+}
+/* =========================
+   PC以上
+========================= */
+@media (min-width: 768px) {
+  /* =========================
+   pc-popular-item
+========================= */
+
+  .popular-item .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .popular-item .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .popular-item .card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  .fa-brands{
+    color:gray
+  }
+
+  /* =========================
+pc-feature
+========================= */
+
+}

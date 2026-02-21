@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="83.493286"
+   height="83.493286"
+   viewBox="0 0 22.090932 22.090932"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   sodipodi:docname="rogo.svg"
+   inkscape:export-filename="menu.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="109.60155"
+     inkscape:cy="35.708892"
+     inkscape:window-width="1339"
+     inkscape:window-height="981"
+     inkscape:window-x="613"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     showguides="true"><inkscape:page
+       x="0"
+       y="0"
+       width="22.090933"
+       height="22.090933"
+       id="page5"
+       margin="0"
+       bleed="0" /></sodipodi:namedview><defs
+     id="defs1" /><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-24.162267,-4.2809136)"><g
+       style="opacity:1"
+       id="g6"
+       transform="matrix(0.04314635,0,0,0.04314635,24.162267,4.2809136)"><g
+         id="g1">
+	<path
+   class="st0"
+   d="M 256,0 C 114.617,0 0,114.618 0,256 0,397.383 114.617,512 256,512 397.382,512 512,397.383 512,256 512,114.618 397.382,0 256,0 Z M 373.649,366.297 H 138.351 V 322.18 h 235.298 z m 0,-88.242 H 138.351 v -44.102 h 235.298 z m 0,-88.227 H 138.351 v -44.117 h 235.298 z"
+   style="fill:#76c904"
+   id="path1" />
+</g></g></g><style
+     type="text/css"
+     id="style1">
+	.st0{fill:#4B4B4B;}
+</style></svg>
