@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* =========================
-   common
+   common(スマホ基準)
 ========================= */
 html {
   -webkit-text-size-adjust: 100%;
@@ -12,7 +12,6 @@ body {
   margin: 0;
   font-family: "Yu Gothic", "YuGothic", "Hiragino Sans", "Meiryo", sans-serif;
   font-weight: 400;
-  min-width: 360px;
   font-size: 16px;
 }
 h1 {
@@ -22,7 +21,7 @@ h2 {
   margin: 0;
 }
 h3 {
-  margin: 48px auto 0;
+  margin: 0 auto ;
   position: relative;
   display: inline-block;
   padding: 0 55px;
@@ -63,8 +62,8 @@ p {
 .container {
   max-width: 600px;
   margin: 0 auto;
-  width: calc(100% - 64px);
-  min-width: 360px;
+  width: 100%;
+  padding:  0 16px;
 }
 .heading-center {
   text-align: center;
@@ -99,7 +98,7 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 0;
+  padding: 8px 16px;
   /* padding: 0 18px; */
 }
 
@@ -195,7 +194,7 @@ a{
     feature
  ========================= */
 .feature {
-  margin: 48px 0;
+  padding: 48px 0 48px;
 }
 .feature-list {
   margin-top: 32px;
@@ -260,7 +259,7 @@ a{
 
 footer{
   background: #F1F1F1;
-  padding: 48px;
+  padding: 24px 0;
 }
 
 footer  small{
@@ -298,10 +297,19 @@ footer .fa-brands:hover{
 footer nav li{
   font-size: 16px;
 }
+
+/* =========================
+   タブレット用の調整
+========================= */
+@media (min-width:768px) and (max-width: 1024px){
+
+}
+
 /* =========================
    PC以上
 ========================= */
 @media (min-width: 768px) {
+
   /* =========================
    pc-popular-item
 ========================= */
