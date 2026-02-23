@@ -65,7 +65,7 @@ p {
   line-height: 1.8;
 }
 .container {
-  max-width: 600px;
+  max-width: 768px;
   margin: 0 auto;
   width: 100%;
   padding: 0 16px;
@@ -100,7 +100,7 @@ img {
   height: auto;
 }
 /* =========================
-   header
+   header(スマホ基準)
 ========================= */
 header {
   position: sticky;
@@ -129,7 +129,7 @@ header img {
 }
 
 /* =========================
-   hero
+   hero(スマホ基準)
 ========================= */
 .hero {
   background: url(img/mv.jpg) center center / cover no-repeat scroll;
@@ -154,24 +154,22 @@ a {
 }
 
 /* =========================
-   popular-item
+   popular-item(スマホ基準)
 ========================= */
 .popular-item {
-  margin: 48px 0 0;
+  margin: 48px 0;
 }
 
-.popular-item .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+.popular-item .flex {
+  display: flex;
+  gap: 16px;
   background: white;
   margin-top: 32px;
-  grid-auto-columns: 1fr;
+  flex-wrap: wrap;
 }
 
 .popular-item .card {
-  width: 100%;
-  height: auto;
+  flex: 1 1 calc(50% - 8px);
   background: white;
 }
 
@@ -204,13 +202,16 @@ a {
   transition: opacity 0.4s;
 }
 /* =========================
-    feature
+    feature(スマホ基準)
  ========================= */
 .feature {
   padding: 48px 0;
 }
 .feature-list {
   margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .feature .item .feature-img {
@@ -267,7 +268,7 @@ a {
   transition: opacity 0.3s;
 }
 /* =========================
-   footer
+   footer(スマホ基準)
 ========================= */
 
 footer {
@@ -314,15 +315,15 @@ footer nav li {
 /* =========================
    タブレット用の調整
 ========================= */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   /* =========================
      common
   ========================= */
   .container {
-    max-width: 880px;
+    max-width: 100%;
   }
   /* =========================
-   header
+   header(タブレット基準)
 ========================= */
   header .ec-nav {
     color: #76c904;
@@ -349,13 +350,22 @@ footer nav li {
   }
 
   /* =========================
-feature
+popular(タブレット基準)
+========================= */
+  .popular-item .card {
+    flex: 1 1 calc(32% - 10px);
+  }
+  .fa-brands {
+    color: gray;
+  }
+
+  /* =========================
+feature(タブレット基準)
 ========================= */
 
   .feature-list {
     display: flex;
-    justify-content: space-between;
-    gap:16px;
+    gap: 16px;
     flex-wrap: wrap;
   }
   .feature-list .item {
@@ -365,39 +375,96 @@ feature
     font-size: 20px;
   }
   .feature .feature-list .item + .item {
-  margin-top: 0;
-}
-
+    margin-top: 0;
+  }
 }
 
 /* =========================
-   PC以上
+   PC以上(PC基準)
 ========================= */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   /* =========================
-   pc-popular-item
+     common
+  ========================= */
+  .container {
+    max-width: 1200px;
+  }
+  button {
+    width: 30%;
+  }
+  /* =========================
+   header(PC基準)
 ========================= */
+header h1{
+  margin-right: 64px;
+}
+header .main-nav {
+    order: 2;
+    display: flex;
+    color: #76c904;
+    font-size: 16px;
+    font-weight: bold;
+  }
+header .main-nav ul{
+  gap:24px
+}
 
-  .popular-item .grid {
+  header .ec-nav {
+    color: #76c904;
+    display: flex;
+    margin-left: auto;
+    order: 3;
+  }
+  header h1 {
+    order: 1;
+  }
+  header .m-menu {
+    order: 3;
+    margin-left: 24px;
+  }
+  header .ec-nav ul {
+    display: flex;
+    gap: 24px;
+    font-size: 24px;
+  }
+
+  .fa-solid,
+  .fa-regular {
+    color: #76c904;
+  }
+
+  /* =========================
+     popular(PC基準)
+  ========================= */
+  .popular-item .flex {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
   }
-
   .popular-item .card {
-    width: 100%;
-    height: auto;
+    flex: none;
   }
 
-  .popular-item .card img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-  }
   .fa-brands {
     color: gray;
   }
 
   /* =========================
-pc-feature
+feature(PC基準)
 ========================= */
+
+  .feature-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .feature-list .item {
+    width: calc((100% - 32px) / 3);
+  }
+  .feature .item .text {
+    font-size: 20px;
+  }
+  .feature .feature-list .item + .item {
+    margin-top: 0;
+  }
 }
