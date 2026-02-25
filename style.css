@@ -130,7 +130,6 @@ header form {
 header img {
   display: block;
 }
-
 /* =========================
    hero(スマホ基準)
 ========================= */
@@ -315,6 +314,12 @@ footer nav li {
   font-size: 16px;
 }
 
+/* ===========================
+   About Page(スマホ基準)
+=========================== */
+
+
+
 /* =========================
    タブレット用の調整
 ========================= */
@@ -406,7 +411,7 @@ feature(タブレット基準)
   }
   header .main-nav {
     order: 2;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: bold;
     display: block;
   }
