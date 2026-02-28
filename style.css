@@ -81,6 +81,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+.breadcrumb {
+  font-size: 12px;
+  padding:12px 0;
+  color: #444;
+}
+
 /* =========================
    header(スマホ基準)
 ========================= */
@@ -301,10 +307,7 @@ footer nav li {
 /* ===========================
    About Page(スマホ基準)
 =========================== */
-.breadcrumb {
-  font-size: 12px;
-  padding:12px 0;
-}
+
 .about-main{
   padding: 40px 0;
 }
@@ -320,6 +323,7 @@ footer nav li {
 .about-content h2{
   font-size: 16px;
   font-weight:500;
+  color: #444;
 }
 .about-content img{
   margin-top: 16px;
@@ -405,6 +409,7 @@ footer nav li {
 }
 .about-mission p{
   font-size: 14px;
+  color: #444;
 }
 
 /* =========================
